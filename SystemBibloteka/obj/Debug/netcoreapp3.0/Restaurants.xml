@@ -1,0 +1,177 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Restaurants</name>
+    </assembly>
+    <members>
+        <member name="M:Restaurants.Controllers.BooksController.GetBooks">
+            <summary>
+            Pobierz wszystkie ksiazki.
+            </summary>
+            <returns>Wszystkie Ksiazki.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.BooksController.GetBook(System.Int32)">
+            <summary>
+            Pobierz ksiazke po Id.
+            </summary>
+            <param name="id">Ksiazka Id.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Restaurants.Controllers.BooksController.PutBook(System.Int64,Restaurants.Controllers.Request.BookRequest)">
+            <summary>
+            Aktualizacja ksiazki po Id.
+            </summary>
+            <param name="id">Ksiazka Id.</param>
+            <param name="bookRequest">Dane Ksiazka.</param>
+            <returns>Pusta odpowiedz.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.BooksController.PostBook(Restaurants.Controllers.Request.BookRequest)">
+            <summary>
+            Tworzenie nowej ksiazki.
+            </summary>
+            <param name="bookRequest">Ksiazka dane.</param>
+            <returns>Stworzona ksiazka.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.BooksController.DeleteBook(System.Int32)">
+            <summary>
+            Usuwanie ksiazki po ID.
+            </summary>
+            <param name="id">Ksiazka Id.</param>
+            <returns>Usunieta ksiazka.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.GetLibraries">
+            <summary>
+            Pobierz wszystkie bibloteki
+            </summary>
+            <returns>Wysztkie biboloteki</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.GetLibrary(System.Int32)">
+            <summary>
+            Pobierz bibloteke po Id
+            </summary>
+            <param name="id">Bibloteka Id.</param>
+            <returns>Bibloteka pod Id.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.PutLibrary(System.Int64,Restaurants.Controllers.Request.LibraryRequest)">
+            <summary>
+            Aktualizacja bibloteki po Id.
+            </summary>
+            <param name="id">Bibloteka Id.</param>
+            <param name="libiaratRequest">Bibloteka Dane.</param>
+            <returns>Pusta Odpowiedz.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.PostLibrary(Restaurants.Controllers.Request.LibraryRequest)">
+            <summary>
+            Stówrz nową biblotekę.
+            </summary>
+            <param name="libiaratRequest">Bibloteka Dane.</param>
+            <returns>Stworzona bibloteka.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.DeleteLibrary(System.Int32)">
+            <summary>
+            Usun biblotetke po Id.
+            </summary>
+            <param name="id">Bibloteka Id.</param>
+            <returns>Usunieta bibloteka.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.LibrariesController.GetBooksForBibrary(System.Int32)">
+            <summary>
+            Pobierz ksiazki które nalezą do bibloteki.
+            </summary>
+            <param name="id">Bibloteka Id.</param>
+            <returns>Zwracanie ksiązek które nalezą do bibloteki.</returns>
+        </member>
+        <member name="P:Restaurants.Controllers.Request.BookRequest.Id">
+            <summary>
+            Ksiazka Id.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Request.BookRequest.Name">
+            <summary>
+            Ksiazka nazwa.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Request.BookRequest.CityId">
+            <summary>
+            City Id.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Request.LibraryRequest.Id">
+            <summary>
+            Bibloteka Id.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Request.LibraryRequest.Name">
+            <summary>
+            Bibloteka nazwa.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Response.BookResponse.Id">
+            <summary>
+            Ksiazka Id.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Response.BookResponse.Name">
+            <summary>
+            Ksiazka nazwa.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Response.BookResponse.LibararyResponse">
+            <summary>
+            Bibloteki.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Response.LibraryResponse.Id">
+            <summary>
+            Bibloteka Id.
+            </summary>
+        </member>
+        <member name="P:Restaurants.Controllers.Response.LibraryResponse.Name">
+            <summary>
+            Bibloteka nazwa.
+            </summary>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.Authenticate(Restaurants.Controllers.Users.AuthenticateModel)">
+            <summary>
+            Authenticates user.
+            </summary>
+            <param name="model">Authentication data.</param>
+            <returns>Authentication result which contains token if provided user credentials are correct.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.Register(Restaurants.Controllers.Users.RegisterModel)">
+            <summary>
+            Registers user.
+            </summary>
+            <param name="model">User data.</param>
+            <returns>Response which contains status code.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.GetAll">
+            <summary>
+            Gets all users.
+            </summary>
+            <returns>All users.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.GetById(System.Int32)">
+            <summary>
+            Gets user which Id is received as parameter.
+            </summary>
+            <param name="id">User Id.</param>
+            <returns>User which Id is received as parameter.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.Update(System.Int32,Restaurants.Controllers.Users.UpdateModel)">
+            <summary>
+            Updates user which Id is received as parameter.
+            </summary>
+            <param name="id">User Id.</param>
+            <param name="model">User data.</param>
+            <returns>Response which contains status code.</returns>
+        </member>
+        <member name="M:Restaurants.Controllers.UsersController.Delete(System.Int32)">
+            <summary>
+            Deletes user which Id is received as parameter.
+            </summary>
+            <param name="id">User Id.</param>
+            <returns>Empty response.</returns>
+        </member>
+    </members>
+</doc>

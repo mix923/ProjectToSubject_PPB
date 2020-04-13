@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mix92\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mix92\\.nuget\\packages"
+    ]
+  }
+}
